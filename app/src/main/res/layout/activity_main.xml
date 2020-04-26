@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/numberbox"
+        android:hint="Enter Number"
+        android:textStyle="bold"
+       android:gravity="center"
+        android:textColorHint="#666"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/phoneicon"></EditText>
+    <Button
+        android:id="@+id/OTPButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/submit_button"
+        android:text="Send OTP"
+        android:textColor="#fff"
+        android:layout_gravity="right"
+        android:elevation="5dp"
+        android:layout_below="@+id/Number"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/OTP"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/numberbox"
+        android:hint="Enter OTP"
+        android:gravity="center"
+        android:textColorHint="#666"
+        android:textColor="#000"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:autofillHints="10"
+        android:elevation="5dp"
+        android:layout_below="@+id/OTPButton"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+    </EditText>
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/submit_button"
+        android:text="Sign In"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_gravity="right"
+        android:layout_below="@id/OTP"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:id="@+id/Progressbar"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminateTint="#000"/>
+</RelativeLayout>
